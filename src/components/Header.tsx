@@ -54,9 +54,12 @@ export default function Header() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">D</span>
-            </div>
+            {/* Logo image supplied by user */}
+            <img
+              src="https://ibb.co/7xgQM8hW"
+              alt="DevTrio logo"
+              className="w-10 h-10 rounded-xl object-cover"
+            />
             <span className="font-display font-semibold text-xl gradient-text">DevTrio</span>
           </motion.a>
 

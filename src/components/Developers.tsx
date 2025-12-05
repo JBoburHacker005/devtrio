@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
+import Telegram from './icons/Telegram';
 
 const developers = [
   {
@@ -11,7 +12,7 @@ const developers = [
     socials: {
       github: '#',
       linkedin: '#',
-      twitter: '#',
+      telegram: '#',
     },
     accentColor: 'from-primary to-cyan-400',
   },
@@ -119,7 +120,7 @@ export default function Developers() {
                   {[
                     { icon: Github, href: dev.socials.github },
                     { icon: Linkedin, href: dev.socials.linkedin },
-                    { icon: Twitter, href: dev.socials.twitter },
+                    { icon: Telegram, href: dev.socials.telegram },
                   ].map((social, i) => (
                     <motion.a
                       key={i}
