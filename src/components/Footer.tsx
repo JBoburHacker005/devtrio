@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Heart } from 'lucide-react';
-import Telegram from './icons/Telegram';
+import { Github, Linkedin, Twitter, Heart } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -14,11 +13,9 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex items-center gap-2"
           >
-            <img
-              src="https://ibb.co/7xgQM8hW"
-              alt="DevTrio logo"
-              className="w-10 h-10 rounded-xl object-cover"
-            />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg">D</span>
+            </div>
             <span className="font-display font-semibold text-xl gradient-text">DevTrio</span>
           </motion.div>
 
@@ -52,7 +49,7 @@ export default function Footer() {
             transition={{ delay: 0.2 }}
             className="flex items-center gap-3"
           >
-            {[Github, Linkedin, Telegram].map((Icon, i) => (
+            {[Github, Linkedin, Twitter].map((Icon, i) => (
               <motion.a
                 key={i}
                 href="#"
